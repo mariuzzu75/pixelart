@@ -10,6 +10,7 @@
       display: grid;
       grid-template-columns: 220px auto;
       height: 100vh;
+      overflow: hidden;
     }
 
     /* --- COLONNA SINISTRA (PULSANTI) --- */
@@ -43,6 +44,7 @@
       display: flex;
       flex-direction: column;
       height: 100%;
+      flex: 1;
       overflow: hidden;
     }
 
@@ -72,6 +74,8 @@
       flex: 1;
       overflow: auto;
       padding: 10px;
+      display: flex;
+      flex-direction: column;
     }
 
     .labels-top {
@@ -89,11 +93,15 @@
 
     .grid-wrapper {
       display: flex;
+      flex: 1;
+      overflow: auto;
     }
 
     .grid {
       display: grid;
       gap: 1px;
+      flex: 1;
+      align-content: start;
     }
 
     .pixel {
